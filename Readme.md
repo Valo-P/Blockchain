@@ -177,3 +177,12 @@ _En simplifiant ainsi la conception, nous nous assurons que notre système reste
 ### Demo/POC
 
 - #### Fichier WeatherCoin.sol
+
+Adresse du contrat : 0x2cb531630adf90a8626189f0bc169658308a5338
+Adresse de mon compte test : 0x9281E407Be284c2B6020F37c4653c1ffdA2bB656
+
+Lien du contrat : https://holesky.etherscan.io/address/0x2cb531630adf90a8626189f0bc169658308a5338
+
+Lien du compte test : https://holesky.etherscan.io/address/0x9281E407Be284c2B6020F37c4653c1ffdA2bB656
+
+Lien d'une transaction : https://holesky.etherscan.io/tx/0x8736e2bd1e50839dfbfc40248ace87b9228118fffdddfbf193399304146f5c8b

@@ -34,7 +34,7 @@ contract WeatherCoin is
     // Roles pour l'oracle météo et l'administrateur
     bytes32 public constant WEATHER_ORACLE_ROLE =
         keccak256("WEATHER_ORACLE_ROLE");
-    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
+    bytes32 public constant WEAC_DEFAULT_ADMIN_ROLE = 0x00;
 
     constructor(
         address defaultAdmin,
@@ -42,10 +42,11 @@ contract WeatherCoin is
         address minter,
         address weatherOracle
     ) ERC20("WeatherCoin", "WEAC") ERC20Permit("WeatherCoin") {
-        _setupRole(DEFAULT_ADMIN_ROLE, defaultAdmin);
-        _setupRole(PAUSER_ROLE, pauser);
-        _setupRole(MINTER_ROLE, minter);
-        _setupRole(WEATHER_ORACLE_ROLE, weatherOracle);
+        _grantRole(WEAC_DEFAULT_ADMIN_ROLE, defaultAdmin);
+        _mint(msg.sender, 500000 * 10 ** decimals());
+        _grantRole(PAUSER_ROLE, pauser);
+        _grantRole(MINTER_ROLE, minter);
+        _grantRole(WEATHER_ORACLE_ROLE, weatherOracle);
     }
 
     function pause() public onlyRole(PAUSER_ROLE) {
@@ -92,12 +93,13 @@ contract WeatherCoin is
         }
     }
 
-    // Les fonctions suivantes sont des substitutions requises par Solidity.
-    function _beforeTokenTransfer(
+    // The following functions are overrides required by Solidity.
+
+    function _update(
         address from,
         address to,
-        uint256 amount
+        uint256 value
     ) internal override(ERC20, ERC20Pausable) {
-        super._beforeTokenTransfer(from, to, amount);
+        super._update(from, to, value);
     }
 }
