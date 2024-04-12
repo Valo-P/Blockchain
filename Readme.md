@@ -2,6 +2,9 @@
 
 **_Sujet 3 : Donnée Météo_**
 
+_Un partie de la rédaction à été corrigé et mise en forme par Github Copilot_
+_Pour le choix de la blockchain, c'est ChatGPT qui à donné la meilleure selon lui (Polkadot)_
+
 ## Analyse
 
 _Dans le secteur de la donnée Météo :_
