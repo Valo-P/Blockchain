@@ -114,24 +114,66 @@ _En résumé, ce contrat WeatherCoin permet la gestion des jetons WEAC, ainsi qu
 
 ## Livrables
 
-#### Githu
+#### Github : https://github.com/Valo-P/Blockchain
 
 ### Besoin de la technologie blockchain
 
-Justifiez ici le besoin de la technologie blockchain ou Distributed Ledger Technology.
+_Le besoin de la technologie blockchain dans le secteur des données météorologiques est justifié par plusieurs facteurs :_
+
+- Transparence et immuabilité des données.
+
+- Traçabilité des données.
+
+- Décentralisation.
+
+- Partage sécurisé des données.
+
+- Automatisation des processus.
+
+_la technologie blockchain apporte une solution efficace et sécurisée pour la gestion et l'échange de données météorologiques, en offrant transparence, traçabilité, décentralisation et automatisation des processus._
 
 ### Choix de la blockchain
 
-Prenez en compte les contraintes, comme le mécanisme de consensus, la finalité, le bloc, etc.
+_Pour notre contexte de gestion des données météorologiques, plusieurs blockchains pourraient être appropriées en fonction de nos besoins spécifiques. Cependant, une blockchain qui se distingue est Polkadot._
+
+_Polkadot est une plateforme blockchain interopérable conçue pour permettre aux différentes chaînes de blocs de fonctionner ensemble de manière transparente._
+
+- Interopérabilité : Polkadot rend facile l'intégration de notre blockchain avec d'autres systèmes.
+
+- Scalabilité : Grâce à son modèle de sécurité partagée, Polkadot peut gérer efficacement un grand nombre de transactions en parallèle.
+
+- Mécanisme de consensus : Polkadot utilise le Nominated Proof of Stake (NPoS), un mécanisme de consensus efficace et écoénergétique.
+
+- Finalité : Les transactions sur Polkadot sont considérées comme définitives après un certain nombre de confirmations, assurant ainsi l'intégrité des données.
+
+- Écosystème robuste : Polkadot bénéficie d'une communauté active de développeurs et d'une gamme d'outils pour faciliter le développement sur sa plateforme.
+
+En résumé, Polkadot offre les fonctionnalités nécessaires pour répondre aux besoins de notre projet tout en offrant un environnement favorable au développement et à l'adoption de notre application météorologique.
 
 ### Conception et modélisation
 
-Décrivez les participants, les actifs, les transactions et les règles commerciales.
+- **Participants :**
+
+- - Les utilisateurs : Ce sont ceux qui soumettent et accèdent aux données météorologiques.
+- - Les validateurs : Ce sont ceux qui vérifient l'exactitude des données et ajoutent de nouveaux blocs à la blockchain.
+    Actifs :
+
+- - Les jetons WEAC : Ils sont utilisés pour récompenser ceux qui contribuent à la précision des données météorologiques.
+
+- **Transactions :**
+
+- - Enregistrement des données : Les utilisateurs soumettent des données météorologiques à la blockchain.
+
+- - Récompenses : Les validateurs attribuent des jetons WEAC aux utilisateurs pour des données précises.
+
+- **Règles commerciales :**
+
+- - Validation des données : Les données doivent être précises pour être acceptées.
+- - Gouvernance : Les utilisateurs peuvent voter sur les mises à jour du système.
+- - Protection des données : Les informations sensibles sont accessibles uniquement aux parties autorisées.
+
+_En simplifiant ainsi la conception, nous nous assurons que notre système reste facile à comprendre et à utiliser pour tous les acteurs impliqués dans la gestion des données météorologiques._
 
 ### Demo/POC
 
-Ayez un smartcontract et/ou un noeud modifié ou non, un docker compose ou helm chart à déployer.
-
-### Déploiement de contrat sur Sepolia ou Holesky
-
-Pour la partie code : Utilisez Remix IDE, OpenZeppelin Wizard et leur librairie.
+- #### Fichier WeatherCoin.sol
